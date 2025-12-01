@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "inworldoreprocessing",
+	"version": "${version}",
+	"name": "In World Ore Processing",
+	"description": "Ore Processing but using blocks",
+	"authors": [
+		"mattentosh"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/inworldoreprocessing/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.inworldoreprocessing.InWorldOreProcessing"
+		],
+		"fabric-datagen": [
+			"dev.inworldoreprocessing.InWorldOreProcessingDataGenerator"
+		],
+		"client": [
+			"dev.inworldoreprocessing.InWorldOreProcessingClient"
+
+		]
+	},
+	"mixins": [
+		"inworldoreprocessing.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.1",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
