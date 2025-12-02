@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "inworldoreprocessing:item/crude_copper_ore"
+  }
+}
