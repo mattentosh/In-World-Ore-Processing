@@ -12,6 +12,7 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     public static final Item CRUDE_COPPER_ORE = registerItem("crude_copper_ore",new Item(new Item.Settings()));
+    public static final Item COPPER_CONCENTRATE = registerItem("copper_concentrate",new Item(new Item.Settings()));
 
     public static final Item SULFURICLEACHING_BUCKET = registerItem("sulfuricleaching_bucket",
             new BucketItem(ModFluids.SULFURICLEACHING_STILL,new Item.Settings().maxCount(1)));
@@ -30,6 +31,7 @@ return Registry.register(Registries.ITEM, Identifier.of(InWorldOreProcessing.MOD
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(CRUDE_COPPER_ORE);
+            entries.add(COPPER_CONCENTRATE);
             entries.add(SULFURICLEACHING_BUCKET);
 
         });

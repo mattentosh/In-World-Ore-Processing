@@ -56,7 +56,7 @@ public class Floatation {
         int target = stack.get(ModDataComponent.Floatation_Targer_Ticks);
         int count = stack.getCount();
         if (ticks >= target) {
-            itemEntity.setStack(new ItemStack(Items.GUNPOWDER, count));
+            itemEntity.setStack(new ItemStack(ModItems.COPPER_CONCENTRATE, count));
         }
 
 
